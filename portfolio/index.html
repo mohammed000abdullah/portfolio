@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mohammed Abdullah Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#bus-calc">Bus Calculator</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="home" class="section-home">
+    <img src="me.JPG" alt="Profile Photo">
+    <h1>Mohammed Abdullah</h1>
+    <p>Front-end Developer</p>
+</section>
+
+<section id="about" class="section-about">
+    <h2>About Me</h2>
+    <p>
+        My name is Mohammed Abdullah. I am 21 years old and I am a second-year 
+        Software Engineering student in Rwanda. I have a strong passion for 
+        technology and programming, and I am always eager to learn new skills 
+        and improve myself.
+    </p>
+    <a href="cv.pdf" download class="cv-btn">Download My CV</a>
+</section>
+
+<section id="skills" class="section-skills">
+    <h2>My Skills</h2>
+    <ul>
+        <li>HTML & CSS (Advanced)</li>
+        <li>JavaScript (Intermediate)</li>
+        <li>C Language (Advanced)</li>
+        <li>Python (Intermediate)</li>
+        <li>Git & GitHub</li>
+    </ul>
+</section>
+
+<section id="bus-calc" class="section-projects">
+    <h2>Bus Calculator</h2>
+    <p>Enter the distance (in km) to estimate the fare 500 RWF / 1km:</p>
+
+    <input type="number" id="distance" placeholder="Distance in km">
+    <button id="calculateBtn">Estimate Fare</button>
+
+    <p id="fareResult"></p>
+</section>
+
+<section id="projects" class="section-projects">
+    <h2>Projects</h2>
+    <img src="cisco.png" alt="project">
+    <p>one of my projects on cisco packet tracker for network Engineering</p>
+</section>
+
+<section id="contact" class="section-contact">
+    <h2>Contact Me</h2>
+    <p>Email: ug25/32667@ines.ac.rw</p>
+    <p>Phone: +250 7958937973</p>
+
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© <span id="year"></span> Mohammed Abdullah.</p>
+</footer>
+
+<script>
+    const yearSpan = document.getElementById("year");
+    const currentYear = new Date().getFullYear();
+    yearSpan.textContent = currentYear;
+</script>
+
+</body>
+</html>

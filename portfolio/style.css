@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background-color: #f0f2f5;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #1f1f1f;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #f0f2f5;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #3498db;
+}
+
+section {
+    padding: 80px 20px;
+    margin: 0 auto;
+    max-width: 900px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.section-home img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+    border: 3px solid #3498db;
+}
+
+.section-home h1 {
+    color: #1f1f1f;
+    margin-top: 10px;
+}
+
+.section-home p {
+    color: #555;
+}
+
+.cv-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.cv-btn:hover {
+    background-color: #1f1f1f;
+}
+
+.section-skills ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.section-skills li {
+    background-color: #e7e7e7;
+    margin: 10px auto;
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.section-skills li:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.project-item {
+    margin: 20px 0;
+}
+
+.project-item img {
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.section-contact input,
+.section-contact textarea {
+    width: 280px;
+    padding: 10px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.section-contact button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.section-contact button:hover {
+    background-color: #1f1f1f;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+#fare-estimator input {
+    width: 200px;
+    padding: 8px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#fare-estimator button {
+    padding: 8px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#fare-estimator button:hover {
+    background-color: #1f1f1f;
+}
+
+#fare-estimator p#fareResult {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
